@@ -1,0 +1,345 @@
+<!DOCTYPE html><html><head>
+  <base href="">
+
+
+  
+  
+ 
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}</style>
+
+  
+        
+          
+        
+  
+  
+  
+        
+        
+  
+  
+  
+
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery.min.js"></script>
+
+<style>
+  p span.header-text {font-size: small;}
+  .header {padding: 5px 10px 10px 10px;}  
+  @media (min-width: 750px) {
+    body {font-size: 130%;}.header p {max-width: 960px;margin: 0 auto;text-align: center;}.header p .header-text {font-size: small;}
+    .header table {max-width: 960px;margin: 0 auto;}.header {padding: 10px 0;}.hide-all {max-width: 960px;margin: 0 auto;}
+    div#fbalert {background-color: transparent;text-align: center;margin-top: 16px;}.fbcoms {font-size: 13px;margin-bottom: 40px;padding: 0 10px 10px 10px;}
+    .fbcoms p, .fbcoms div.item {margin: 10px;}.fbcoms div.item p {margin: 0;}.fbcoms div.item {padding: 10px 10px 10px 80px;min-height: 80px;}
+    .fbcoms img.profileimg {padding: 0 10px;width: 60px;height: 60px;left: 0;top: 10px;}.fbcoms p.comtxt {font-weight: normal;}
+    .wrapper {max-width: 960px;font-size: 16px;}.bottom {margin-bottom: 20px;}.title {margin: 10px 0 30px 0;font-size: 2em;}
+    hr {margin: 10px 5px;}.wrapper td {padding: 5px;}
+  }
+div, main, article, aside, footer, nav, section, header {display: block;}span {display: inline;}h1, h2, h3 {display: block;}
+</style>
+
+
+
+        
+  
+  
+  <title>
+          Spin The Lucky Wheel!      </title>
+
+  
+      <style type="text/css">
+          </style>
+  
+  
+  
+</head>
+<body class="en ltr">
+<div class="header">
+  <table>
+    <tbody>
+    <tr>
+      <td><img src="logo.png" class="logo-left" height="25" width="25"></td>
+      <td><span class="header-text">Congratulations iPhone user!</span></td>
+    </tr>
+    </tbody>
+  </table>
+  <p><span class="header-text">You have been chosen for today's special reward in Newark!</span></p>
+</div>
+
+<div class="hide-all">
+
+<div id="fbalert">
+  <p>Spin the wheel to pick your reward!</p>
+</div>
+
+<div id="spinner">
+  <img id="spinBG" src="spinBG.png">
+  <img id="spin" src="spin.png">
+  <img onclick="startSpin()" id="win" src="win.png">
+  <img onclick="spin2()" id="win2" src="win.png">
+  <img id="winP" src="winP.png">
+  <img id="winP2" src="winP.png">
+</div>
+
+
+<div class="fbcoms">
+  <p class="comments">Comments:</p>
+
+  <p class="buttons">
+      <span>
+      Like    </span>
+     ·       <span>
+      Comment    </span>
+     ·       <span>
+      Share    </span>
+     ·       <span>
+      Delete    </span>
+        </p>
+
+  <p class="totlikes"><span id="youand"></span><b>12,068 others</b> like this</p>
+  <p class="viewmore clearfix">
+  <span class="left">View More Comments</span>
+  <span class="right">7 of 4,356</span>
+  </p>
+
+    <div class="item">
+    <img class="profileimg" src="1.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Monica Paquino</span>
+      I was lucky enough to get the apple watch! They sent me the sport edition in white color. I still can't believe this is real, haha!    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+    <div class="item">
+    <img class="profileimg" src="2.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Rudy Winobort</span>
+      I got the iPad Air!! WOhoO!!!! This is the best day ever!    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+    <div class="item">
+    <img class="profileimg" src="3.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Manny Jiang</span>
+      Hello everyone, you have give Walmarta try. My name is Mark. I am a software engineer by trade. So I am up on what is an internet scam and what isn't. Trust me, WalmartIS NOT A SCAM. It's a legit company that will honor any rewards as long as you try out some of the cool product offering from some of their sponsors. Thank you Walmartfor introducing me to cool new products to try. As well as getting a $100 reward card for doing so.    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+    <div class="item">
+    <img class="profileimg" src="4.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Darren Tam</span>
+      Taking the surveys is fun. I was in marketing so I find these surveys very interesting. Then, of course, is the shopping -- and who doesn't like that? It was fun, and I found a lot of great deals. I highly recommend Netflix.    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+    <div class="item">
+    <img class="profileimg" src="5.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Olivia Mack</span>
+      Has anyone actually won yet? I spun 2 times from both of my accounts but nothing...    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+    <div class="item">
+    <img class="profileimg" src="6.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Zhao Wei Fong</span>
+      This thing is all over facebook! I won the free spin, but after that I landed on the red spot anyway.    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+    <div class="item">
+    <img class="profileimg" src="7.jpg" height="50" width="50">
+    <p class="comtxt">
+      <span class="name">Becky Ma</span>
+      I got nothing.. why am I always so unlucky :(    </p>
+    <p class="combot">
+      <span class="ago"></span>
+      · 
+      <span class="fblike">Like</span>
+      <span class="likes totlikes">267</span>
+    </p>
+  </div>
+  </div>
+</div>
+
+<div class="show-all">
+<a rel="noreferrer noopener" href="https://www.google.com/" style="position: fixed; background-color: transparent !important; margin: 0; border-radius: 0; left: 0;
+  top: 0; right: 0; bottom: 0; display: block; z-index: 99999;"></a>
+<div class="wrapper">
+  <div class="title"><p>Congratulations!!</p></div>
+    <img src="2ce9119fd0f3cdeb69fdbca4ce2f32c71.png" class="logo" height="170">
+    <p style="text-align:center">Congratulations, your Walmart$100 gift card has been reserved!</p>
+		<br>
+		<hr>
+    <p align="center">IMPORTANT: Only Walmart$100 gift card per person.</p>
+		<hr>
+		<br>
+    <table style="font-size:100%">
+      <tbody>
+            <tr>
+        <td>1. </td>
+        <td>Click or Tap "Get your Walmartgiftcard" button <b>BELOW</b>.</td>
+      </tr>
+            <tr>
+        <td>2. </td>
+        <td>You will be redirected to our certified distributor's website.</td>
+      </tr>
+            <tr>
+        <td>3. </td>
+        <td>Answer 1 Question to prove you are a real person</td>
+      </tr>
+            <tr>
+        <td>4. </td>
+        <td>Enter your <b>email and shipping address to begin</b> <i>(This is required for identity verification purposes, to prevent people from getting multiple prizes).</i></td>
+      </tr>
+            <tr>
+        <td>5. </td>
+        <td>Follow the instructions and your Walmart$100 gift card will be shipped via UPS with 3 day shipping.</td>
+      </tr>
+            <tr></tr>
+      </tbody>
+    </table>
+			
+    <div class="bottom">
+      <a rel="noreferrer noopener" class="cta" href="https://www.google.com/">Get your Walmartgiftcard!</a>
+
+      <p class="now">Offer valid for the next <b style="color:red"><span id="countdown"></span></b> seconds.</p>
+      <br><p style="color:grey; font-size:10px;">Details apply</p>
+      </div>
+    </div>
+<script type="text/javascript">
+function startSpin() {
+    var e = document.getElementById("spin"),
+        n = document.getElementById("win"),
+        t = document.getElementById("winP"),
+        o = document.getElementById("win2");
+    e.className = e.className + "spinAround", n.style.display = 'none', t.style.display = 'block', setTimeout(function() {
+        t.style.display = 'none', o.style.display = 'block'
+    }, 150), setTimeout(function() {
+      alert('You Won 1 Free Extra Spin!\n\nClick OK to spin again');
+      spin2enabled = !0;
+          }, 6500)
+}
+
+
+function spin2() {
+    if (spin2enabled) {
+        var e = document.getElementById("spin"),
+            n = document.getElementById("win"),
+            t = document.getElementById("winP"),
+            o = document.getElementById("win2");
+        e.className = e.className + " spinAround2", n.style.display = 'none', t.style.display = 'block', setTimeout(function() {
+            t.style.display = 'none', o.style.display = 'block'
+        }, 150), setTimeout(function() {
+          var e = alert('Congratulations!\n\nYour reward: Walmart$100 gift card!\n\nClick Ok to get your reward!');
+            e === !0 || $(".hide-all").hide(), $(".show-all").show();
+            var n = 39,
+                t = setInterval(function() {
+                    $("#countdown").text(n--), +1 == n && clearInterval(t)
+                }, 1e3);
+        }, 6800)
+    }
+}
+</script>
+
+
+
+
+  
+</div>
+</body>
+
+
+
+
+        
+	
+		  	
+  
+        
+        
+    
+
+            	            
+  
+  
+              
+
+    
+                                                                                    
+       
+
+
+
+
+
+
+  
+                                                                                        
+  
+        
+  
+        
+  
+                  
+     
+    
+
+
+
+
+
+
+
+  
+
+
+    
+  
+
+
+
+  
+
+  
+
+  
+
+  <div style="display:none;"><a href="#">Go to site</a></div>
+</body></html>
